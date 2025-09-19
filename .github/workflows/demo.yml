@@ -1,0 +1,12 @@
+name: CI Demo with IntelliCI
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Test with IntelliCI
+      run: |
+        echo "This project uses my custom IntelliCI server!"
+        echo "See: https://github.com/Darshwan/IntelliCI-Server"
